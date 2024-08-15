@@ -1,0 +1,16 @@
+formatter: markdown table
+
+sections:
+  show:
+    - inputs
+
+output:
+  file: ../../../slos/README.md
+
+sort:
+  enabled: false
+
+settings:
+  anchor: false
+  description: true
+  escape: false

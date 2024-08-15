@@ -1,0 +1,14 @@
+- name: Users can view the dashboard
+  environment: production
+  service: my-service
+  objectives:
+    - type: http-error-percentage
+      method: GET
+      path: /dashboard
+      critical: 0.1
+      warning: 0.05
+    - type: http-latency-max
+      method: GET
+      path: /dashboard
+      critical: 2000
+      warning: 1500

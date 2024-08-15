@@ -1,0 +1,10 @@
+- type: error-tracking-trace-alert
+  service: my-service
+  environment: production
+  method: ""
+  path: ""
+  warning: 0.1
+  critical: 1
+  alert_on_recovery: false
+  alert_channels:
+    - "@slack-my-error-channel"
